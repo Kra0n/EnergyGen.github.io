@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Asesorías para instalación y puesta en marcha</title>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url(IMAGENES/imagen6.jpg) center/cover no-repeat fixed;
+      background-color: rgba(240, 240, 240, 0.9); /* Fondo con color de fondo con transparencia */
+    }
+
+    header {
+      text-align: center;
+      padding: 1.5rem 1rem 1rem; /* Ajusté el padding-top a 1.5rem */
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      color: #f7f8fa;
+      margin-bottom: 0.5rem;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2), 0 0 25px rgba(255, 165, 0, 0.6); /* Sombra para dar un efecto de profundidad */
+      transform: scale(1.05); /* Efecto de escala para realzar el título */
+      transition: transform 0.3s ease, text-shadow 0.3s ease; /* Transición suave */
+    }
+
+    header h1:hover {
+      transform: scale(1.1); /* Aumenta el tamaño al pasar el ratón */
+      text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.3), 0 0 30px rgba(255, 165, 0, 0.9); /* Efecto de sombra más marcado al hacer hover */
+    }
+
+    .cards-container {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .plan-card {
+      flex: 1 1 350px;
+      background-color: rgba(255, 255, 255, 0.92);
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      padding: 2rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      backdrop-filter: blur(4px);
+      min-height: 320px;
+    }
+
+    .plan-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    }
+
+    .plan-title {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      color: #e67e22;
+    }
+
+    .plan-description {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .plan-observaciones {
+      font-size: 0.95rem;
+      color: #555;
+      background: #fff3e6;
+      padding: 0.75rem 1rem;
+      border-left: 4px solid #e67e22;
+      border-radius: 8px;
+    }
+
+    .btn-back {
+      display: block;
+      margin: 0.5rem auto 3rem; /* Ajusté el margin-top a 1.5rem */
+      text-align: center;
+      background: #e67e22;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      border-radius: 8px;
+      width: fit-content;
+      transition: background 0.3s ease;
+    }
+
+    .btn-back:hover {
+      background: #d35400;
+    }
+
+    @media (max-width: 768px) {
+      .cards-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    .whatsapp-button {
+      position: fixed;
+      bottom: 30px; /* Ajusté la posición */
+      right: 20px;
+      background-color: #25d33c;
+      color: white;
+      padding: 12px 16px;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      z-index: 1000;
+      animation: bounce 2s infinite;
+    }
+
+    .whatsapp-button img {
+      width: 24px;
+      height: 24px;
+    }
+
+    .whatsapp-button:hover {
+      background-color: #1ebe5d;
+      transform: scale(1.05);
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Asesorías para instalación y puesta en marcha</h1>
+  </header>
+
+  <div class="cards-container">
+    <!-- Tarjeta 1: Sin contrato -->
+    <div class="plan-card">
+      <h2 class="plan-title">❌ Sin contrato</h2>
+      <div class="plan-description">
+        <p>• Visita a terreno e instalaciones que necesitan respaldo eléctrico.</p>
+        <p>• Informe técnico de cálculo eléctrico y potencia necesaria para respaldo eléctrico.</p>
+      </div>
+      <div class="plan-observaciones">
+        Costo extra si necesita ser declarado para SEC.
+      </div>
+    </div>
+
+    <!-- Tarjeta 2: Con contrato -->
+    <div class="plan-card">
+      <h2 class="plan-title">✅ Con contrato vigente</h2>
+      <div class="plan-description">
+        <p>• Visita a terreno e instalaciones que necesitan respaldo eléctrico. <strong>Gratuito</strong>.</p>
+        <p>• Informe técnico de cálculo eléctrico y potencia necesaria para respaldo eléctrico. <strong>Gratuito</strong>.</p>
+      </div>
+      <div class="plan-observaciones">
+        Costo extra si necesita ser declarado para SEC.
+      </div>
+    </div>
+  </div>
+
+  <!-- Botón de regreso -->
+  <a href="index.html" class="btn-back">⬅ Volver al inicio</a>
+
+  <footer>
+    <a href="https://wa.me/56977757013" target="_blank" class="whatsapp-button" title="¡Cotiza con nosotros por WhatsApp!">
+      <img src="IMAGENES/imagen2.png" alt="WhatsApp" />
+      <span>¡Cotiza con nosotros!</span>
+    </a>
+  </footer>
+
+</body>
+</html>
+
+
+
+

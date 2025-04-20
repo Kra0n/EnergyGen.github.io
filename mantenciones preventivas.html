@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Planes de Mantenimiento</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background-color: #f4f7fa;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #2c3e50;
+    }
+
+    .plans-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .plan-card {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+      padding: 1.5rem;
+      border-top: 6px solid #3498db;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.3s ease;
+    }
+
+    .plan-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .plan-title {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #3498db;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      padding-left: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    ul li {
+      margin-bottom: 0.4rem;
+    }
+
+    .plan-section {
+      margin-bottom: 1rem;
+    }
+
+    .highlight {
+      background: #ecf9ff;
+      padding: 0.75rem;
+      border-left: 4px solid #3498db;
+      border-radius: 8px;
+    }
+    
+    .return-button {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #e67e22;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .return-button:hover {
+      background-color: #cf711f;
+    }
+
+    @media (max-width: 768px) {
+      .columns-container {
+        flex-direction: column;
+      }
+    }
+
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d33c;
+      color: white;
+      padding: 12px 16px;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      z-index: 1000;
+      animation: bounce 2s infinite;
+    }
+
+    .whatsapp-button img {
+      width: 24px;
+      height: 24px;
+    }
+
+    .whatsapp-button:hover {
+      background-color: #1ebe5d;
+      transform: scale(1.05);
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+  </style>
+</head>
+<body>
+
+<h1>Planes de Mantenimiento de Grupo Electrógeno</h1>
+
+<div class="plans-container">
+
+  <div class="plan-card">
+    <div class="plan-title">🔧 Plan Básico</div>
+    <div class="plan-section">
+      <strong>Servicios incluidos:</strong>
+      <ul>
+        <li>Mantención mensual</li>
+        <li>Asistencia técnica telefónica</li>
+        <li>Aseo general</li>
+      </ul>
+    </div>
+    <div class="plan-section">
+      <strong>Chequeos:</strong>
+      <ul>
+        <li>Nivel de refrigerante y lubricante</li>
+        <li>Estado de batería</li>
+        <li>Datos eléctricos y de generación</li>
+        <li>Pruebas en vacío</li>
+      </ul>
+    </div>
+    <div class="plan-section">
+      <strong>Informe técnico:</strong>
+      <ul>
+        <li>QR con historial de mantenciones</li>
+        <li>Informe con imágenes de valores medidos</li>
+      </ul>
+    </div>
+    <div class="highlight">🔄 No incluye cambio de aceite o filtros</div>
+  </div>
+
+  <div class="plan-card">
+    <div class="plan-title">⚙️ Plan Smart</div>
+    <div class="plan-section">
+      <strong>Servicios incluidos:</strong>
+      <ul>
+        <li>Mantención mensual </li>
+        <li>Cambio de filtros y lubricantes</li>
+        <li>Asistencia técnica telefónica</li>
+        <li>Aseo General</li>
+      </ul>
+    </div>
+    <div class="plan-section">
+      <strong>Chequeos:</strong>
+      <ul>
+        <li>Nivel de refrigerante y lubricante</li>
+        <li>Estado de batería</li>
+        <li>Datos eléctricos y de generación</li>
+        <li>Cambio de aceite y filtros (aire, combustible, refrigerante)</li>
+      </ul>
+    </div>
+    <div class="plan-section">
+      <strong>Informe técnico:</strong>
+      <ul>
+        <li>QR con historial de mantenciones</li>
+        <li>Informe con imágenes de valores medidos</li>
+      </ul>
+    </div>
+    <div class="highlight">🔄 Cambio cada 150 horas o 50 si el equipo es nuevo</div>
+  </div>
+
+  <div class="plan-card">
+    <div class="plan-title">🚨 Plan Pro</div>
+    <div class="plan-section">
+      <strong>Servicios incluidos:</strong>
+      <ul>
+        <li>Mantención semanal</li>
+        <li>Cambio de filtros y lubricantes</li>
+        <li>Reparaciones básicas durante la visita</li>
+        <li>Asistencia técnica y emergencias 24/7</li>
+        <li>Aseo General</li>
+      </ul>
+    </div>
+    <div class="plan-section">
+      <strong>Chequeos:</strong>
+      <ul>
+        <li>Nivel de refrigerante y lubricante</li>
+        <li>Estado de batería</li>
+        <li>Datos eléctricos y de generación</li>
+        <li>Cambio de aceite y filtros (aire, combustible, refrigerante)</li>
+      </ul>
+    </div>
+    <div class="plan-section">
+      <strong>Informe técnico:</strong>
+      <ul>
+        <li>QR con historial de mantenciones</li>
+        <li>Informe con imágenes de valores medidos</li>
+      </ul>
+    </div>
+    <div class="highlight">🔄 Cambio cada 150 horas o 50 si el equipo es nuevo</div>
+  </div>
+
+</div>
+
+<!-- Botón de regreso -->
+<a href="index.html" class="return-button" aria-label="Volver al inicio">⬅ Volver al inicio</a>
+
+<footer>
+  <a href="https://wa.me/56977757013" target="_blank" class="whatsapp-button" title="¡Cotiza con nosotros por WhatsApp!">
+    <img src="IMAGENES/imagen2.png" alt="WhatsApp" />
+    <span>¡Cotiza con nosotros!</span>
+  </a>
+</footer>
+
+</body>
+</html>
+

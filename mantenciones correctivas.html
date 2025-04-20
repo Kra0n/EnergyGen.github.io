@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Planes de Servicio</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f8f8;
+      color: #333;
+    }
+
+    .plan-card {
+      border-top: 6px solid #e67e22;
+      background: linear-gradient(
+          rgba(255, 255, 255, 0.92),
+          rgba(255, 255, 255, 0.92)
+        ),
+        url('IMAGENES/imagen5.jpg') center/cover no-repeat;
+      font-size: 1.1rem;
+      padding: 2rem;
+      margin: 2rem auto;
+      max-width: 1000px;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    .plan-title {
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+    }
+
+    .columns-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    article.column-box {
+      flex: 1;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    article.column-box:hover {
+      transform: scale(1.02);
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+    }
+
+    article.column-box h3 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+    }
+
+    article.column-box ul {
+      padding-left: 1.2rem;
+      line-height: 1.8;
+    }
+
+    .no-contrato {
+      background: rgba(252, 234, 229, 0.97);
+    }
+
+    .con-contrato {
+      background: rgba(234, 250, 241, 0.97);
+    }
+
+    .highlight {
+      margin-top: 1.5rem;
+      background: rgba(255, 246, 229, 0.95);
+      padding: 1rem;
+      border-left: 4px solid #e67e22;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    .return-button {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #e67e22;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .return-button:hover {
+      background-color: #cf711f;
+    }
+
+    @media (max-width: 768px) {
+      .columns-container {
+        flex-direction: column;
+        gap: 2rem; /* Aumento del espacio entre artículos en pantallas pequeñas */
+      }
+    }
+
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d33c;
+      color: white;
+      padding: 12px 16px;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      z-index: 1000;
+      animation: bounce 2s infinite;
+    }
+
+    .whatsapp-button img {
+      width: 24px;
+      height: 24px;
+    }
+
+    .whatsapp-button:hover {
+      background-color: #1ebe5d;
+      transform: scale(1.05);
+    }
+
+    @keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+  </style>
+</head>
+
+<body>
+
+  <section class="plan-card" role="region" aria-label="Planes de servicio">
+    <h2 class="plan-title">🚫 Sin Planes</h2>
+
+    <div class="columns-container">
+      
+      <!-- NO CLIENTE -->
+      <article class="column-box no-contrato" aria-label="Clientes sin contrato vigente">
+        <h3 style="color: #d63031;">❌ Clientes sin contrato vigente</h3>
+        <ul>
+          <li>Visita técnica a terreno para diagnóstico del equipo</li>
+          <li>Entrega de informe técnico con observaciones</li>
+          <li>Elaboración de presupuesto por reparaciones o mantenciones requeridas</li>
+        </ul>
+      </article>
+
+      <!-- CLIENTE -->
+      <article class="column-box con-contrato" aria-label="Clientes con contrato activo">
+        <h3 style="color: #27ae60;">✅ Clientes con contrato activo</h3>
+        <ul>
+          <li>Visita técnica a terreno sin costo adicional</li>
+          <li>Informe técnico incluido como parte del plan preventivo</li>
+          <li>Presupuesto de reparaciones gratuito</li>
+        </ul>
+      </article>
+
+    </div>
+
+    <div class="highlight">
+      ℹ️ Las condiciones del servicio varían según la existencia de un contrato de mantención vigente.
+    </div>
+
+    <!-- Botón de regreso -->
+    <a href="index.html" class="return-button">⬅ Volver al inicio</a>
+  </section>
+  
+  <footer>  
+    <a href="https://wa.me/56977757013" target="_blank" class="whatsapp-button" title="¡Cotiza con nosotros por WhatsApp!">
+      <img src="IMAGENES/imagen2.png" alt="WhatsApp" />
+      <span>¡Cotiza con nosotros!</span>
+    </a>
+  </footer>
+
+</body>
+</html>
+
+
+
+  
+  
+  

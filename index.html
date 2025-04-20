@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EnergyGen Chile</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Mantención e instalación de grupos electrógenos en Chile. Servicio técnico especializado.">
+  <meta name="keywords" content="grupos electrógenos, mantención, instalación, energía de respaldo, Temuco, Chile">
+  <meta name="author" content="EnergyGen Chile">
+
+  <link rel="stylesheet" href="STYLES.CSS">
+  <link rel="icon" href="IMAGENES/favicon.ico" type="image/x-icon">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #d9d9da;
+      color: #000000;
+    }
+
+    header {
+      background-color: #04105f;
+      color: #ffffff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #091f9e;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 15px 0;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+      transform: scale(1.1);
+    }
+
+    .hero {
+      background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(IMAGENES/imagen4.jpeg);
+      background-size: cover;
+      background-position: center;
+      height: 350px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 5px rgba(25, 40, 255, 0.8);
+    }
+
+    .hero h1 {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+
+    section {
+      padding: 40px 15px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .services {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .service-link {
+      display: block;
+      text-decoration: none;
+    }
+
+    .service-box {
+  background-color: #2230fa; /* Color contrastante al azul */
+  color: #fffbfb; /* Texto en negro para mejor legibilidad */
+  border: 1px solid #b07d00;
+  border-radius: 20px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(10, 10, 10, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+    .service-box:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgba(10, 10, 10, 0.4);
+    }
+
+    footer {
+      background-color: #0a0f2f;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    .flex-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .contact, .about {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .contact p, .about p {
+      margin: 8px 0;
+    }
+
+    .whatsapp-button {
+      position: fixed;
+      bottom: 60px;
+      right: 20px;
+      background-color: #25d33c;
+      color: white;
+      padding: 12px 16px;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      z-index: 1000;
+      animation: bounce 2s infinite;
+    }
+
+    .whatsapp-button img {
+      width: 24px;
+      height: 24px;
+    }
+
+    .whatsapp-button:hover {
+      background-color: #1ebe5d;
+      transform: scale(1.05);
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .hero h1 {
+        font-size: 20px;
+        padding: 8px;
+      }
+
+      .service-box {
+        width: 100%;
+      }
+
+      .flex-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div style="display: flex; align-items: center; justify-content: center; gap: 15px;">
+      <img src="IMAGENES/logo.png" alt="Logo de EnergyGen Chile" style="height: 100px;"/>
+      <div>
+        <h1>EnergyGen Chile</h1>
+        <p>Especialistas en Grupos Electrógenos</p>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <div class="hero">
+    <h1>Mantención de Grupos Electrógenos</h1>
+  </div>
+
+  <section id="inicio" style="margin-top: -20px;">
+    <h2>Bienvenido</h2>
+    <p>
+      Ofrecemos soluciones integrales en mantención preventiva y correctiva de grupos electrógenos,
+      asegurando el funcionamiento continuo de tu energía de respaldo.
+    </p>
+  </section>
+
+  <section id="servicios">
+    <h2>Nuestros Servicios</h2>
+    <div class="services">
+      <a href="mantenciones preventivas.html" class="service-link">
+        <div class="service-box">
+          <h3>Mantención Preventiva</h3>
+          <p>Inspección regular, cambio de aceite, filtros y ajustes generales para mantener el equipo en óptimas condiciones.</p>
+        </div>
+      </a>
+      <a href="mantenciones correctivas.html" class="service-link">
+        <div class="service-box">
+          <h3>Mantención Correctiva</h3>
+          <p>Reparaciones rápidas ante fallas para reducir el tiempo inactivo.</p>
+        </div>
+      </a>
+      <a href="instalaciones y puesta en marcha.html" class="service-link">
+        <div class="service-box">
+          <h3>Instalación y Puesta en Marcha</h3>
+          <p>Asesoría e implementación completa de sistemas eléctricos de respaldo.</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section id="nosotros">
+    <div class="flex-container">
+      <div class="about">
+        <h2>Sobre Nosotros</h2>
+        <p>Somos una empresa especializada en la mantención y reparación de grupos electrógenos. Contamos con los mejores técnicos mantenedores de la región, altamente capacitados para brindar soluciones eficientes y confiables. Todos nuestros trabajos pasan por un riguroso proceso de control de calidad, lo que nos permite garantizar resultados duraderos y un óptimo rendimiento de los equipos.</p>
+      </div>
+      <div class="contact" id="contacto">
+        <h2>Contáctanos</h2>
+        <p>📞 +56 9 7775 7013</p>
+        <p>📧 contacto@EnergyGen.cl</p>
+        <p>📍 Temuco, Chile</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 EnergyGen Chile. Todos los derechos reservados.</p>
+  </footer>
+
+  <a href="https://wa.me/56977757013" target="_blank" class="whatsapp-button" title="¡Cotiza con nosotros por WhatsApp!">
+    <img src="IMAGENES/imagen2.png" alt="Icono de WhatsApp - Cotiza con nosotros" />
+    <span>¡Cotiza con nosotros!</span>
+  </a>
+</body>
+</html>
+
